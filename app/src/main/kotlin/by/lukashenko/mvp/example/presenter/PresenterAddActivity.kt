@@ -52,7 +52,7 @@ class PresenterAddActivity(private val view: IAddActivity) : IPresenterAddactivi
 
         if (stateErrorInputName && stateErrorInputAge) {
             repository.addUser(user)
-
+            view.closeActivityWithSuccess()
         }
     }
 }
